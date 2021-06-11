@@ -1,8 +1,12 @@
-import fs from "fs";
-import Binance from "node-binance-api";
-import dotenv from "dotenv";
+import fs from 'fs';
+import Binance from 'node-binance-api';
+import dotenv from 'dotenv';
+import chalk from 'chalk';
 
 dotenv.config();
+
+const blue = chalk.blue;
+const orange = chalk.keyword('orange');
 
 const bProxy = new Binance().options({
   APIKEY: dotenv.parse('APIKEY'),
@@ -13,39 +17,46 @@ const bProxy = new Binance().options({
 // TODO: automate: if cache file, retrieve cache. If no file, hit api and create file.
 const cacheTickers = async () => {
   let ticker;
+
   try {
-    ticker = await bProxy.prices();
+    ticker = JSON.parse(fs.readFileSync('./cache/ticker.json').toString());
+    console.log(blue('Retrieved tickers from cache'));
   } catch (error) {
-    console.error(error);
+    console.error(error.message);
+    if (error.message.substring(0, 6) === 'ENOENT') {
+      console.log(orange('No cache. Retrieving from API.'));
+    }
   }
-  
-  let btcTicker = Object.keys(ticker).filter((label) => label.includes('BTC'));
-  let ethTicker = Object.keys(ticker).filter((label) => label.includes('ETH'));
-  let dogeTicker = Object.keys(ticker).filter((label) => label.includes('DOGE'));
-  let shibTicker = Object.keys(ticker).filter((label) => label.includes('SHIB'));
 
-  fs.writeFileSync('./cache/ticker-labels.json', JSON.stringify(Object.keys(ticker)));
-  fs.writeFileSync("./cache/ticker.json", JSON.stringify(ticker));
-  fs.writeFileSync("./cache/btc-ticker.json", JSON.stringify(btcTicker));
-  fs.writeFileSync("./cache/eth-ticker.json", JSON.stringify(ethTicker));
-  fs.writeFileSync("./cache/doge-ticker.json", JSON.stringify(dogeTicker));
-  fs.writeFileSync("./cache/shib-ticker.json", JSON.stringify(shibTicker));
+  if (!ticker) {
+    try {
+      ticker = await bProxy.prices();
+      console.log(blue('Retrieved tickers from API'));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  fs.writeFileSync('./cache/ticker.json', JSON.stringify(ticker));
 };
-
-// cacheTickers();
 
 const retrieveShibCache = () => {
   const ticker = JSON.parse(fs.readFileSync('./cache/ticker.json').toString());
   let shibPairs = [];
   for (const coinPair in ticker) {
     if (Object.hasOwnProperty.call(ticker, coinPair)) {
-      if(coinPair.includes('SHIB') && !coinPair.includes('SUSHI')) {
-        shibPairs.push({coinPair, rate: ticker[coinPair]})
+      if (coinPair.includes('SHIB') && !coinPair.includes('SUSHI')) {
+        shibPairs.push({ coinPair, rate: ticker[coinPair] });
       }
     }
   }
   return shibPairs;
-}
+};
 
-const shibCache = retrieveShibCache();
-console.log(shibCache);
+const main = async () => {
+  await cacheTickers();
+  const shibCache = retrieveShibCache();
+  console.log({ shibCache });
+};
+
+main();
