@@ -5,5 +5,12 @@
   "main": "index.js",
   "scripts": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bree": "^6.2.0",
+    "chalk": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "node-binance-api": "^0.12.5"
+  },
+  "type": "module"
 }
