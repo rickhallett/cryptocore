@@ -21,3 +21,396 @@ Retrieved SHIBUSDT from cache'
 Retrieved SHIBUSDT from cache'
 2021-06-12T07:24:37.630Z [sys:] info: Retrieving latest balances from api...
 2021-06-12T07:24:38.138Z [sys:] info: SHIB balance: 0.00
+2021-06-12T10:51:17.546Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:51:17.550Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:51:17.559Z [sys:] info: added latest position: [object Object]
+2021-06-12T10:51:27.551Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:51:27.552Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:51:27.554Z [sys:] info: added latest position: [object Object]
+2021-06-12T10:51:37.556Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:51:37.556Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:51:37.557Z [sys:] info: added latest position: [object Object]
+2021-06-12T10:51:47.561Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:51:47.562Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:51:47.562Z [sys:] info: added latest position: [object Object]
+2021-06-12T10:52:17.114Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:52:17.117Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:52:58.745Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:52:58.749Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:52:58.754Z [sys:] info: added latest position: [object Object]
+2021-06-12T10:53:08.749Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:53:08.750Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:53:08.751Z [sys:] info: added latest position: [object Object]
+2021-06-12T10:57:18.723Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:57:18.726Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:57:18.734Z [sys:] info: added latest position: [object Object]
+2021-06-12T10:58:03.070Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:59:05.555Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:59:05.558Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:59:05.568Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T10:59:15.559Z [sys:] info: Getting latest SHIB...
+2021-06-12T10:59:15.560Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T10:59:15.561Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:00:49.821Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:00:49.828Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:00:49.832Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:13.088Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:13.090Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:13.576Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:22.059Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:22.061Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:22.062Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:23.064Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:23.065Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:23.066Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:24.070Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:24.073Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:24.077Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:25.075Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:25.077Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:25.080Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:26.080Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:26.080Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:26.081Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:27.084Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:27.085Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:27.085Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:28.085Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:28.086Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:28.087Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:01:29.269Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:01:29.270Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:01:29.271Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:04.704Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:04.707Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:04.715Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:05.708Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:05.708Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:05.709Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:06.712Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:06.713Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:06.713Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:07.718Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:07.718Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:07.719Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:08.723Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:08.723Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:08.724Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:09.727Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:09.727Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:09.728Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:10.730Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:10.730Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:10.732Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:11.735Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:11.735Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:11.736Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:12.741Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:12.741Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:12.742Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:13.747Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:13.747Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:13.748Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:14.752Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:02:14.752Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T11:02:14.752Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:02:14.754Z [sys:] info: Added [object Object] to scheduler
+2021-06-12T11:38:16.629Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:40:57.102Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:13.423Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:13.429Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:13.434Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:19.960Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:19.961Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:19.962Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:20.963Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:20.968Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:20.970Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:21.966Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:21.970Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:21.973Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:22.972Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:22.976Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:22.978Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:23.976Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:23.980Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:23.981Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:24.977Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:24.977Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:24.978Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:25.983Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:25.985Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:25.987Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:26.988Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:26.992Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:26.994Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:27.994Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:27.997Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:27.998Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:28.998Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:42:29.001Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:42:29.002Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:42:29.005Z [sys:] info: Added [object Object] to scheduler
+2021-06-12T11:43:29.127Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:29.132Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:29.138Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:30.127Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:30.130Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:30.133Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:31.129Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:31.132Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:31.133Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:32.135Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:32.139Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:32.141Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:33.138Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:33.142Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:33.144Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:34.139Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:34.142Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:34.144Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:35.144Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:35.148Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:35.150Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:36.150Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:36.153Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:36.154Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:37.152Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:37.155Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:37.158Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:38.156Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:38.158Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:38.160Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:39.162Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:43:39.165Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:43:39.167Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:43:44.679Z [sys:] info: Added [object Object] to scheduler
+2021-06-12T11:45:26.470Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:26.473Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:27.474Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:27.474Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:28.478Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:28.478Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:29.483Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:29.484Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:30.488Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:30.488Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:31.493Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:31.493Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:32.497Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:32.497Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:33.502Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:33.502Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:34.507Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:34.508Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:35.513Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:35.513Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:45:36.517Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:45:36.517Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:46:07.673Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:46:07.676Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:46:08.678Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:46:08.679Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:46:09.683Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:46:09.684Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:46:10.689Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:46:10.689Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:46:11.693Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:46:11.693Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:17.287Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:17.289Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:17.298Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:18.292Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:18.293Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:18.294Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:19.298Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:19.298Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:19.299Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:20.303Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:20.303Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:20.304Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:21.309Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:21.309Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:21.310Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:22.314Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:22.315Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:22.315Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:23.316Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:23.317Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:23.318Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:24.319Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:24.319Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:24.320Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:25.325Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:25.325Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:25.326Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:26.329Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:26.330Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:26.330Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:27.333Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:47:27.334Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:47:27.335Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:47:27.336Z [sys:] info: Added [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object] to scheduler
+2021-06-12T11:48:02.300Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:02.307Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:02.312Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:03.304Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:03.308Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:03.311Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:04.308Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:04.311Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:04.312Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:05.314Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:05.315Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:05.317Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:06.317Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:06.321Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:06.322Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:07.321Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:07.324Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:07.326Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:08.321Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:08.324Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:08.325Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:09.322Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:09.326Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:09.327Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:10.328Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:10.332Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:10.334Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:11.333Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:48:11.337Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:48:11.340Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:48:12.338Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:50:08.031Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:50:08.038Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:50:08.039Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:50:09.034Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:50:09.037Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:50:09.039Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:50:10.039Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:50:10.043Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:50:10.044Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:50:11.043Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:50:11.047Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:50:11.048Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:50:12.048Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:50:12.050Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:50:12.051Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:50:40.310Z [sys:] info: Added [object Object],[object Object],[object Object],[object Object],[object Object] to scheduler
+2021-06-12T11:52:55.774Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:52:55.777Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:52:55.786Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:53:55.777Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:53:55.778Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:53:55.779Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:54:55.781Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:54:55.783Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:54:55.784Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:55:55.786Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:55:55.788Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:55:55.788Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:56:55.791Z [sys:] info: Getting latest SHIB...
+2021-06-12T11:56:55.793Z [sys:] info: 
+Retrieved SHIBUSDT from cache
+2021-06-12T11:56:55.793Z [sys:] info: added latest position: SHIBUSDT
+2021-06-12T11:56:55.794Z [sys:] info: Added [object Object],[object Object],[object Object],[object Object],[object Object] to scheduler
