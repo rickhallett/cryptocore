@@ -2,6 +2,8 @@ import fs from 'fs';
 import Binance from 'node-binance-api';
 import dotenv from 'dotenv';
 import chalk from 'chalk';
+import { create, all } from 'mathjs';
+import { bignumber } from 'mathjs';
 
 dotenv.config();
 
@@ -14,7 +16,9 @@ const bProxy = new Binance().options({
   verbose: true,
 });
 
-// TODO: automate: if cache file, retrieve cache. If no file, hit api and create file.
+const mathx = create(all);
+mathx.config({ number: 'BigNumber', precision: 64 });
+
 const cacheTickers = async () => {
   let ticker;
 
@@ -53,10 +57,43 @@ const retrieveShibCache = () => {
   return shibPairs;
 };
 
+const getLatestSymbolRate = async (symbol) => {
+  console.log(orange(`Retrieving latest price for ${symbol}...`));
+  let ticker;
+  try {
+    ticker = await bProxy.prices(symbol);
+    console.info(`Price of ${symbol}:`, ticker[symbol]);
+  } catch (error) {
+    console.error(error);
+  }
+  return {
+    symbol,
+    price: ticker[symbol],
+  };
+};
+class Position {
+  constructor({ symbol, price }) {
+    this.symbol = symbol;
+    this.price = mathx.bignumber(price || 0);
+    this.date = Date.now();
+    this.readableDate = Date(this.date);
+  }
+
+  calculateDiff(curprice) {
+    return mathx.divide(mathx.bignumber(curprice), this.price).multiply(100);
+  }
+
+  buy() {}
+
+  sell() {}
+}
+
 const main = async () => {
   await cacheTickers();
   const shibCache = retrieveShibCache();
   console.log({ shibCache });
+  const shibLatest = new Position(await getLatestSymbolRate('SHIBUSDT'));
+  console.log({ shibLatest });
 };
 
 main();
