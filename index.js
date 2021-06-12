@@ -5,14 +5,14 @@ import chalk from 'chalk';
 import { create, all } from 'mathjs';
 import winston from 'winston';
 
+// const winston = require('winston');
+
 dotenv.config();
 
 const blue = chalk.blue;
 const orange = chalk.keyword('orange');
 
-// console.info({ env: process.env });
-
-// const winston = require('winston');
+// logger.info({ env: process.env });
 
 const { format } = winston;
 const { combine, timestamp, label, printf } = format;
@@ -23,7 +23,6 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
 
 const logger = winston.createLogger({
   level: 'info',
-  // format: winston.format.json(),
   format: combine(label({ label: 'sys:' }), timestamp(), myFormat),
   defaultMeta: { service: 'user-service' },
   transports: [
@@ -35,13 +34,13 @@ const logger = winston.createLogger({
   ],
 });
 
-// if (process.env.NODE_ENV !== 'production') {
-//   logger.add(
-//     new winston.transports.Console({
-//       format: winston.format.simple(),
-//     })
-//   );
-// }
+if (process.env.NODE_ENV !== 'production') {
+  logger.add(
+    new winston.transports.Console({
+      format: winston.format.simple(),
+    })
+  );
+}
 
 const bProxy = new Binance().options({
   APIKEY: process.env.APIKEY,
@@ -51,10 +50,6 @@ const bProxy = new Binance().options({
   verbose: false,
 });
 
-bProxy.useServerTime();
-
-// console.info({ bProxy });
-
 const mathx = create(all);
 mathx.config({ number: 'BigNumber', precision: 64 });
 
@@ -63,23 +58,20 @@ const cacheTickers = async () => {
 
   try {
     ticker = JSON.parse(fs.readFileSync('./cache/ticker.json').toString());
-    console.log('hit');
-    // logger.log(blue('Retrieved tickers from cache'));
     logger.info('Retrieved tickers from cache');
-    logger.error('Retrieved tickers from cache');
   } catch (error) {
-    // console.error(error.message);
+    logger.error(error.message);
     if (error.message.substring(0, 6) === 'ENOENT') {
-      // console.log(orange('No cache. Retrieving from API.'));
+      logger.info('No cache. Retrieving from API.');
     }
   }
 
   if (!ticker) {
     try {
       ticker = await bProxy.prices();
-      // console.log(blue('Retrieved tickers from API'));
+      logger.info('Retrieved tickers from API');
     } catch (error) {
-      // console.error(error);
+      logger.error(error);
     }
   }
 
@@ -106,22 +98,22 @@ const getLatestSymbolRate = async (symbol) => {
     ticker = JSON.parse(
       fs.readFileSync(`./cache/latest-${symbol}.json`).toString()
     );
-    // console.log(blue(`\nRetrieved ${symbol} from cache`));
+    logger.log(`\nRetrieved ${symbol} from cache`);
   } catch (error) {
-    // console.error(error.message);
+    logger.error(error.message);
     if (error.message.substring(0, 6) === 'ENOENT') {
-      // console.log(orange('No cache. Retrieving from API.'));
+      logger.log('No cache. Retrieving from API.');
     }
   }
 
   if (!ticker) {
     try {
-      // console.log(orange(`\nRetrieving latest price for ${symbol}...`));
+      logger.log(`\nRetrieving latest price for ${symbol}...`);
       ticker = await bProxy.prices(symbol);
-      // console.info(`Price of ${symbol}:`, ticker[symbol]);
+      logger.info(`Price of ${symbol}:`, ticker[symbol]);
       fs.writeFileSync(`./cache/latest-${symbol}.json`, JSON.stringify(ticker));
     } catch (error) {
-      // console.error(error);
+      logger.error(error);
     }
   }
 
@@ -132,25 +124,17 @@ const getLatestSymbolRate = async (symbol) => {
 };
 
 const getCurrentBalances = async () => {
+  await bProxy.useServerTime();
   let balances;
   try {
+    logger.info('Retrieving latest balances from api...');
     balances = await bProxy.balance();
     // console.info('balances()', balances);
-    // console.info('ETH balance: ', balances.ETH.available);
+    fs.writeFileSync('./cache/balances.json', JSON.stringify(balances));
+    logger.info(`SHIB balance: ${balances.SHIB.available}`);
   } catch (error) {
-    // console.error(error);
+    logger.error(error);
   }
-
-  bProxy.balance((error, balances) => {
-    // if (error) return console.error(error);
-
-    balances = balances;
-
-    // console.info('balances()', balances);
-    // console.info('BNB balance 2: ', balances.BNB.available);
-
-    return balances;
-  });
 };
 
 class Scheduler {
@@ -187,11 +171,11 @@ const main = async () => {
   const positions = new Scheduler();
   await cacheTickers();
   const shibCache = retrieveShibCache();
-  // console.log({ shibCache });
+  // logger.log({ shibCache });
   const shibLatest = new Position(await getLatestSymbolRate('SHIBUSDT'));
-  // console.log({ shibLatest });
+  // logger.log({ shibLatest });
   positions.addPostion(shibLatest);
-  // console.log({ positions: JSON.stringify(positions) });
+  // logger.log({ positions: JSON.stringify(positions) });
   await getCurrentBalances();
 };
 

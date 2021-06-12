@@ -1,0 +1,7 @@
+2021-06-12T07:11:15.604Z [sys:] error: Retrieved tickers from cache
+2021-06-12T07:22:29.218Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T07:22:58.398Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T07:24:37.238Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'

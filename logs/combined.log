@@ -1,0 +1,23 @@
+2021-06-12T07:11:15.603Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:11:15.604Z [sys:] error: Retrieved tickers from cache
+2021-06-12T07:11:36.020Z [sys:] info: [34mRetrieved tickers from cache[39m
+2021-06-12T07:13:21.800Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:13:46.286Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:14:30.778Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:15:32.839Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:16:00.141Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:22:29.214Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:22:29.218Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T07:22:29.622Z [sys:] info: Retrieving latest balances from api...
+2021-06-12T07:22:29.876Z [sys:] info: SHIB balance: 
+2021-06-12T07:22:58.385Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:22:58.398Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T07:22:58.886Z [sys:] info: Retrieving latest balances from api...
+2021-06-12T07:22:59.767Z [sys:] info: SHIB balance: 
+2021-06-12T07:24:37.234Z [sys:] info: Retrieved tickers from cache
+2021-06-12T07:24:37.238Z [sys:] error: Cannot create property 'Symbol(level)' on string '
+Retrieved SHIBUSDT from cache'
+2021-06-12T07:24:37.630Z [sys:] info: Retrieving latest balances from api...
+2021-06-12T07:24:38.138Z [sys:] info: SHIB balance: 0.00
