@@ -57,19 +57,19 @@ const cacheTickers = async () => {
 
   try {
     ticker = JSON.parse(fs.readFileSync('./cache/ticker.json').toString());
-    logger.info('Retrieved tickers from cache');
+    // logger.info('Retrieved tickers from cache');
   } catch (error) {
     handleError(error);
     logger.error(error);
     if (error.message.substring(0, 6) === 'ENOENT') {
-      logger.info('No cache. Retrieving from API.');
+      // logger.info('No cache. Retrieving from API.');
     }
   }
 
   if (!ticker) {
     try {
       ticker = await bProxy.prices();
-      logger.info('Retrieved tickers from API');
+      // logger.info('Retrieved tickers from API');
     } catch (error) {
       handleError(error);
       logger.error(error);
@@ -96,24 +96,24 @@ const retrieveShibCache = () => {
 const getLatestSymbolRate = async (symbol) => {
   let ticker;
 
-  try {
-    ticker = JSON.parse(
-      fs.readFileSync(`./cache/latest-${symbol}.json`).toString()
-    );
-    logger.info(`\nRetrieved ${symbol} from cache`);
-  } catch (error) {
-    handleError(error);
-    logger.error(error);
-    if (error.message.substring(0, 6) === 'ENOENT') {
-      logger.info('No cache. Retrieving from API.');
-    }
-  }
+  // try {
+  //   ticker = JSON.parse(
+  //     fs.readFileSync(`./cache/latest-${symbol}.json`).toString()
+  //   );
+  //   // logger.info(`\nRetrieved ${symbol} from cache`);
+  // } catch (error) {
+  //   handleError(error);
+  //   logger.error(error);
+  //   if (error.message.substring(0, 6) === 'ENOENT') {
+  //     // logger.info('No cache. Retrieving from API.');
+  //   }
+  // }
 
   if (!ticker) {
     try {
-      logger.info(`\nRetrieving latest price for ${symbol}...`);
+      // logger.info(`\nRetrieving latest price for ${symbol}...`);
       ticker = await bProxy.prices(symbol);
-      logger.info(`Price of ${symbol}:`, ticker[symbol]);
+      // logger.info(`Price of ${symbol}:`, ticker[symbol]);
       fs.writeFileSync(`./cache/latest-${symbol}.json`, JSON.stringify(ticker));
     } catch (error) {
       handleError(error);
@@ -131,14 +131,14 @@ const getCurrentBalances = async () => {
   await bProxy.useServerTime();
   let balances;
   try {
-    logger.info('Retrieving latest balances from api...');
+    // logger.info('Retrieving latest balances from api...');
     balances = await bProxy.balance();
     fs.writeFileSync('./cache/balances.json', JSON.stringify(balances));
     fs.writeFileSync(
       './cache/shib-balances.json',
       JSON.stringify(balances.SHIB)
     );
-    logger.info(`SHIB balance: ${balances.SHIB.available}`);
+    // logger.info(`SHIB balance: ${balances.SHIB.available}`);
     return balances;
   } catch (error) {
     handleError(error);
@@ -170,7 +170,12 @@ class Position {
   }
 
   calculateDiff(curprice) {
-    return mathx.divide(mathx.bignumber(curprice), this.price).multiply(100);
+    return (
+      mathx
+        .divide(mathx.bignumber(curprice), this.price)
+        .multiply(100)
+        .subtract(100) + '%'
+    );
   }
 
   buy(qty) {
@@ -189,27 +194,32 @@ const cachers = async () => {
 
 const getBalances = async () => {
   const balances = await getCurrentBalances();
-  logger.info(`GBP balances: ${balances.GBP}`);
-  logger.info(`USDT balances: ${balances.USDT}`);
-  logger.info(`SHIB balances: ${balances.SHIB}`);
+  // logger.info(`GBP balances: ${balances.GBP}`);
+  // logger.info(`USDT balances: ${balances.USDT}`);
+  // logger.info(`SHIB balances: ${balances.SHIB}`);
   return balances;
 };
 
-const tickerInterval = async (symbol, positions) => {
+const tickerInterval = async (symbol, scheduler) => {
   const stopInterval = (i, cnxToken) => {
     if (i > 3) {
       clearInterval(cnxToken);
-      eventBus.emit('INTERVAL_COMPLETE', positions);
+      eventBus.emit('INTERVAL_COMPLETE', scheduler);
     }
   };
+
+  const posLatest = new Position(await getLatestSymbolRate('SHIBUSDT'));
+  scheduler.addPostion(posLatest);
+  console.table(scheduler.positions);
 
   let i = 0;
   const cnxToken = setInterval(async () => {
     logger.info('Getting latest SHIB...');
     const posLatest = new Position(await getLatestSymbolRate('SHIBUSDT'));
-    positions.addPostion(posLatest);
-    logger.info(`added latest position: ${posLatest.symbol}`);
-    stopInterval(i++, cnxToken, positions);
+    scheduler.addPostion(posLatest);
+    console.table(scheduler.positions);
+    // logger.info(`added latest position: ${posLatest.symbol}`);
+    stopInterval(i++, cnxToken);
   }, 60000);
 };
 
@@ -217,7 +227,7 @@ const main = async () => {
   const scheduler = new Scheduler();
 
   tickerInterval('SHIBUSDT', scheduler);
-  // logger.info({ scheduler: JSON.stringify(scheduler) });
+  // // logger.info({ scheduler: JSON.stringify(scheduler) });
 };
 
 eventBus.on('INTERVAL_COMPLETE', (scheduler) => {
@@ -225,7 +235,7 @@ eventBus.on('INTERVAL_COMPLETE', (scheduler) => {
     './cache/shib-positions.json',
     JSON.stringify(scheduler.positions)
   );
-  logger.info(`Added ${scheduler.positions} to scheduler`);
+  // logger.info(`Added ${scheduler.positions} to scheduler`);
 });
 
 const handleError = (error) => {
